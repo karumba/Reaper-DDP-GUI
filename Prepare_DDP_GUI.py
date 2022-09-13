@@ -289,7 +289,7 @@ ISRC (12 chars):'
 
 				logString = check_allowed_chars(take_name,logString)
 
-				marker_name = "#" + take_name # prefixes the take's name with "#". This will be the name of our "#" markers #Track-Name|ISRC=XYZ|PERFORMER=XYZ
+				marker_name = "#TITLE=" + take_name # prefixes the take's name with "#TITLE=". This will be the name of our "#" markers #Track-Name|ISRC=XYZ|PERFORMER=XYZ
 				
 				logString = logString + '\n#' + str(format(ItemIndex, '02d')) + ' ' + take_name
 				logString = logString + " - " + str(math.floor(item_length/60)) + ":" + str( format(int((item_length) - (math.floor(item_length/60)*60)), '02d') )
